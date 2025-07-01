@@ -1,5 +1,4 @@
 FROM ubuntu:noble
 RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y dnsutils
-RUN apt clean
+    apt-get install -y dnsutils && \
+    apt clean
